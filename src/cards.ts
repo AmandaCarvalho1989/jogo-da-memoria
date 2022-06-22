@@ -56,4 +56,8 @@ export const cards = collections
   )
   .flat();
 
-export const shuffledCards = cards.sort(() => Math.random() - 0.5);
+const shuffle = (list: any) => list.sort(() => Math.random() - 0.5);
+
+export const shuffledCards = shuffle(cards);
+
+export const playAgain = () => shuffle(shuffledCards);
