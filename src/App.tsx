@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import questionImage from "./assets/fonts/question.svg";
 import titleImg from "./assets/fonts/title.svg";
-import { cards } from "./cards";
+import { shuffledCards } from "./cards";
 
 const App = () => {
   const [flippedCards, setFlippedCards] = useState<any>([]);
@@ -32,6 +32,7 @@ const App = () => {
 
   const isThisCardCompleted = (card: any) =>
     completedCards.find((completed: any) => completed.id === card.id);
+
   const isThisCardAlreadyFlipped = (card: any) =>
     flippedCards.find((flipped: any) => flipped.id === card.id);
 
@@ -39,7 +40,7 @@ const App = () => {
     <main className="container">
       <img src={titleImg} alt="jogo da memoria" />
       <section className="cards">
-        {cards.map((card, idx) => {
+        {shuffledCards.map((card, idx) => {
           const isCompleted = isThisCardCompleted(card);
           const isThisFlipped = isThisCardAlreadyFlipped(card);
           const isCompletedOrFlipped = isCompleted || isThisFlipped;
@@ -53,7 +54,10 @@ const App = () => {
               }`}
               onClick={() => onFlipCard(card)}
             >
-              <img src={shownImage} alt="teste" />
+              <img
+                src={shownImage}
+                alt={isCompletedOrFlipped ? card.id : "unflipped"}
+              />
             </div>
           );
         })}
