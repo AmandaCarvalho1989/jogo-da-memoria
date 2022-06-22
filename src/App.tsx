@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <main className="container">
-      <img src={titleImg} alt="jogo da memoria" />
+      <img src={titleImg} alt="jogo da memoria" id="title" />
       <section className="cards">
         {shuffledCards.map((card, idx) => {
           const isCompleted = isThisCardCompleted(card);
