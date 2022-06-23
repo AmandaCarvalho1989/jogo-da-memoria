@@ -14,14 +14,14 @@
  ## 💻 Project
 
 Projeto feito somente para aprendizado/curiosidade. 
-A interface desse jogo foi idealizado pelo Iuri Silva, criador da comunidade Codelândia e é o desafio 11.
+A interface desse jogo foi idealizado pelo [Iuri Silva](https://github.com/iuricode), criador da comunidade Codelândia e é o desafio 11.
 <br />
 
 ## 🧬 Technologies
 
 This project was developed using the following technologies:
 
-- [ReactJS]([https://vuejs.org/](https://pt-br.reactjs.org/))
+- [ReactJS](https://pt-br.reactjs.org/)
 
 
 ## 🚀 Getting started
