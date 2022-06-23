@@ -17,6 +17,8 @@ Projeto feito somente para aprendizado/curiosidade.
 A interface desse jogo foi idealizado pelo [Iuri Silva](https://github.com/iuricode), criador da comunidade Codelândia e é o desafio 11.
 <br />
 
+Também pode acessá-lo em produção, clicando neste link: https://jogo-da-memoria-amandacarvalho1989.vercel.app/
+
 ## 🧬 Technologies
 
 This project was developed using the following technologies:
